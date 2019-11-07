@@ -54,6 +54,171 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	// background-color:red;
 }
 
+//vars
+.FlexMeUD(){
+	Display:flex;
+	flex-direction: column;
+}
+.FlexMeRL(){
+	display: flex;
+	flex-direction: row;
+}
+.GiveSpread(){
+	margin:3vh 0;
+}
+@Bcolor: #d7d3ed;
+.RemLinkDec(){
+	a{
+		text-decoration: none;
+		color:maroon;
+	}
+	text-decoration: none;
+	color:maroon;
+}
+.H1s{
+	font-size: 2em;
+}
+.GiveMeSmoothBorder(){
+	border-radius: 10px;
+}
+.MakeMeAButton(){
+	padding:.5rem;
+	.GiveMeSmoothBorder()
+}
+.BoldMe(){
+	font-weight: bold;
+}
+//main css
+
+html{
+	background-image: url(../imgs/bg.jpg);
+	background-size: 100% 160%;
+}
+nav{
+	.FlexMeRL();
+	justify-content: space-evenly;
+	.GiveSpread();
+	.RemLinkDec();
+	a{
+		color:maroon;
+	}
+}
+body{
+	
+	margin: 0 5%;
+	@media (min-width: 900px) {
+		margin: 0 20%;
+	}
+
+}
+header{
+	.FlexMeUD();
+	@media (max-width: 1300px) {
+		height: 35rem;	
+	}
+	@media (max-width: 527px) {
+		height: 37rem;	
+	}
+	@media (max-width: 380px) {
+		height: 18rem;
+	}
+	background-color: @Bcolor;
+	padding: 1rem;
+	height: 35rem;
+	.GiveMeSmoothBorder();
+	img{
+		height: 20rem;
+		width: 60%;
+		.GiveMeSmoothBorder();
+		@media (max-width: 380px) {
+			display: none;
+		}
+	}
+	h1{
+		.H1s();
+	}
+	h3{
+		.GiveSpread();
+		
+	}
+	p{
+		.GiveSpread();
+		font-size: .9rem;
+	}
+	a{
+		.GiveSpread();
+		.RemLinkDec();
+		background-image: url(../imgs/bg.jpg);
+		.MakeMeAButton();
+	}
+	.CM{
+		margin:.1vh 0;
+	}
+}
+.MainInfo{
+	.FlexMeRL();
+	justify-content: space-evenly;
+	.GiveSpread();
+	.GiveMeSmoothBorder();
+	background-color: @Bcolor;
+	padding: 1rem .5rem;
+	div{
+		.FlexMeUD();
+		max-width: 50%;
+	}
+	h2{
+		font-size: 1.5em;
+		.BoldMe();
+	}
+	h2{
+		margin-bottom: 2vh;
+		.BoldMe();
+	}
+	li{
+		.GiveSpread()
+	}
+	p{
+		font-size: 1.3rem;
+	}
+	
+}
+#WorkHistory{
+	background-color: @Bcolor;
+	h2{
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+		.BoldMe();
+	}
+	.FlexMeUD();
+	.GiveMeSmoothBorder();
+	.GiveSpread();
+	padding: 1rem;
+	.table{
+		.FlexMeRL();
+		justify-content: space-evenly;
+	}
+	h3{
+		.BoldMe();
+		margin-bottom: .5rem;
+		text-decoration: underline;
+		text-align: center;
+	}
+	p{
+		.GiveSpread();
+		text-align: center;
+	}
+}
+#Contact{
+	background-color: @Bcolor;
+	width: 35%;
+	padding:1rem;
+	.GiveMeSmoothBorder();
+	.GiveSpread();
+	p{
+		margin:1vh;
+	}
+}
