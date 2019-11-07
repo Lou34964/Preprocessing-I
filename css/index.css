@@ -1,1 +1,290 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.H1s {
+  font-size: 2em;
+}
+html {
+  background-image: url(../imgs/bg.jpg);
+  background-size: 100% 160%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3vh 0;
+  text-decoration: none;
+  color: maroon;
+}
+nav a {
+  text-decoration: none;
+  color: maroon;
+}
+nav a {
+  color: maroon;
+}
+body {
+  margin: 0 5%;
+}
+@media (min-width: 900px) {
+  body {
+    margin: 0 20%;
+  }
+}
+header {
+  Display: flex;
+  flex-direction: column;
+  background-color: #d7d3ed;
+  padding: 1rem;
+  height: 35rem;
+  border-radius: 10px;
+}
+@media (max-width: 1300px) {
+  header {
+    height: 35rem;
+  }
+}
+@media (max-width: 527px) {
+  header {
+    height: 37rem;
+  }
+}
+@media (max-width: 380px) {
+  header {
+    height: 18rem;
+  }
+}
+header img {
+  height: 20rem;
+  width: 60%;
+  border-radius: 10px;
+}
+@media (max-width: 380px) {
+  header img {
+    display: none;
+  }
+}
+header h1 {
+  font-size: 2em;
+}
+header h3 {
+  margin: 3vh 0;
+}
+header p {
+  margin: 3vh 0;
+  font-size: 0.9rem;
+}
+header a {
+  margin: 3vh 0;
+  text-decoration: none;
+  color: maroon;
+  background-image: url(../imgs/bg.jpg);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+header a a {
+  text-decoration: none;
+  color: maroon;
+}
+header .CM {
+  margin: 0.1vh 0;
+}
+.MainInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3vh 0;
+  border-radius: 10px;
+  background-color: #d7d3ed;
+  padding: 1rem 0.5rem;
+}
+.MainInfo div {
+  Display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.MainInfo h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.MainInfo h2 {
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+.MainInfo li {
+  margin: 3vh 0;
+}
+.MainInfo p {
+  font-size: 1.3rem;
+}
+#WorkHistory {
+  background-color: #d7d3ed;
+  Display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 3vh 0;
+  padding: 1rem;
+}
+#WorkHistory h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+#WorkHistory .table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#WorkHistory h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  text-align: center;
+}
+#WorkHistory p {
+  margin: 3vh 0;
+  text-align: center;
+}
+#Contact {
+  background-color: #d7d3ed;
+  width: 35%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 3vh 0;
+}
+#Contact p {
+  margin: 1vh;
+}
